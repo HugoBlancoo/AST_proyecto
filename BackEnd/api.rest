@@ -1,0 +1,25 @@
+###
+GET http://localhost:4000/api/items
+###
+POST http://localhost:4000/api/items
+Content-Type: application/json
+
+{
+    "name": "Bedrix",
+    "price": "69",
+    "size": "xxxxs"
+}
+
+###
+GET http://localhost:4000/api/items/65df75e62c5a0cc5544f4d05
+
+###
+DELETE http://localhost:4000/api/items/65df795087358ade242bd4cb
+
+###
+PUT http://localhost:4000/api/items/65df75e62c5a0cc5544f4d05/
+Content-Type: application/json
+
+{
+    "price": 1000000
+}

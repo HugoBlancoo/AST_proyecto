@@ -1,0 +1,7 @@
+Lanzar Backend:
+> cd AST/BackEnd
+> npm run dev
+
+Lanzar FrontEnd:
+> cd AST/FrontEnd
+> ng serve -o
