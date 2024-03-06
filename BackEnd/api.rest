@@ -7,14 +7,17 @@ Content-Type: application/json
 {
     "name": "Bedrix",
     "price": "69",
-    "size": "xxxxs"
+    "size": "xxxxs",
+    "color": "carton",
+    "electric": "si"
 }
 
 ###
 GET http://localhost:4000/api/items/65df75e62c5a0cc5544f4d05
 
 ###
-DELETE http://localhost:4000/api/items/65df795087358ade242bd4cb
+DELETE http://localhost:4000/api/items/65e8a70330df0bc683659e9d1.1 200 OK
+
 
 ###
 PUT http://localhost:4000/api/items/65df75e62c5a0cc5544f4d05/
