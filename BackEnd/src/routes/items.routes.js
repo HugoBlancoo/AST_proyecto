@@ -11,6 +11,7 @@ const itemsCtrl = require('../controllers/items.controller.js');
 router.get('/', itemsCtrl.getItems);
 router.post('/', itemsCtrl.createItems);
 router.get('/:id', itemsCtrl.getItem);
+router.get('/price/:price', itemsCtrl.getItemByPrice);
 router.put('/:id', itemsCtrl.updateItems);
 router.delete('/:id', itemsCtrl.deleteItems);
 

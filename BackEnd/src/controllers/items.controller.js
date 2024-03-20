@@ -6,7 +6,7 @@ const Item = require('../models/Item');
 itemsCtrl.getItems = async (req, res) =>{
     const items = await Item.find()
     res.json(items)
-    console.log("getItems")
+    //console.log("getItems")
 };
 itemsCtrl.createItems = async (req, res) =>{
     const newItem = new Item(req.body)
@@ -15,11 +15,16 @@ itemsCtrl.createItems = async (req, res) =>{
 };
 
 itemsCtrl.getItem = async (req, res) => {
-    const { id } = req.params; // Extract the id parameter
-    
+    const { id } = req.params; // Extract the id parameter  
     const item = await Item.findById(id); // Find the item by id
     res.json(item); // Send the item as JSON response
-    console.log(item.length);
+    //console.log(item.length);
+};
+
+itemsCtrl.getItemByPrice = async (req, res) => {
+    const { price } = req.params; // Extract the price parameter
+    const item = await Item.find({price: parseFloat(price)}); // Find the item by price
+    res.json(item); // Send the item as JSON response
 };
 
 itemsCtrl.updateItems = async(req, res) =>{
