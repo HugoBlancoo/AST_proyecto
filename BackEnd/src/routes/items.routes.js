@@ -2,7 +2,7 @@ const{Router} = require('express');
 const router = Router();
 
 const itemsCtrl = require('../controllers/items.controller.js');
-const { ifError } = require('assert');
+//const { ifError } = require('assert');
 
 //CRUD
 //CREATE - READ - UPDATE - DELETE
