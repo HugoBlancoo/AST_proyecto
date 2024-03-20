@@ -27,6 +27,17 @@ itemsCtrl.getItemByPrice = async (req, res) => {
     res.json(item); // Send the item as JSON response
 };
 
+itemsCtrl.getItemByColor = async (req, res) =>{
+    const color = req.params.color
+    try {
+        const items = await Item.find({ color: color });
+        res.json(items);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Error fetching items');
+    }
+};
+
 itemsCtrl.updateItems = async(req, res) =>{
     await Item.findByIdAndUpdate(req.params.id, req.body)
     res.json({status: 'Item updated'});

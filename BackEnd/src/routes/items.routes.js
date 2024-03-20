@@ -12,6 +12,7 @@ router.get('/', itemsCtrl.getItems);
 router.post('/', itemsCtrl.createItems);
 router.get('/:id', itemsCtrl.getItem);
 router.get('/price/:price', itemsCtrl.getItemByPrice);
+router.get('/color/:color', itemsCtrl.getItemByColor);
 router.put('/:id', itemsCtrl.updateItems);
 router.delete('/:id', itemsCtrl.deleteItems);
 

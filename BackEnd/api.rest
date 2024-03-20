@@ -31,3 +31,10 @@ Content-Type: application/json
 {
     "price": 1000000
 }
+
+###
+GET http://localhost:4000/api/items/65fb3365104c733ce81a88a5
+
+###
+
+GET http://localhost:4000/api/items/color/Rojo
