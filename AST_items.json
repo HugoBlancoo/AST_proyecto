@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "65fb31ee104c733ce81a888e"
+  },
+  "name": "Calcetin",
+  "price": 10,
+  "size": "Pequeño",
+  "color": "Rojo",
+  "electric": "no",
+  "shape": "Calcetin",
+  "space": "Interior",
+  "quantity": "4",
+  "createdAt": {
+    "$date": "2024-03-20T18:58:54.935Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-20T18:58:54.935Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65fb3237104c733ce81a8893"
+  },
+  "name": "Cascanueces",
+  "price": 15,
+  "size": "Mediano",
+  "color": "Marron",
+  "electric": "no",
+  "shape": "Persona",
+  "space": "Interior",
+  "quantity": "3",
+  "createdAt": {
+    "$date": "2024-03-20T19:00:07.221Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-20T19:00:07.221Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65fb32a5104c733ce81a8897"
+  },
+  "name": "Luces",
+  "price": 8,
+  "size": "Pequeño",
+  "color": "Varios",
+  "electric": "yes",
+  "shape": "Largo",
+  "space": "Exterior",
+  "quantity": "20",
+  "createdAt": {
+    "$date": "2024-03-20T19:01:57.576Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-20T19:01:57.576Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65fb32e6104c733ce81a889b"
+  },
+  "name": "Bolas Arbol",
+  "price": 14,
+  "size": "Pequeño",
+  "color": "Varios",
+  "electric": "no",
+  "shape": "Esfera",
+  "space": "Interior",
+  "quantity": "9",
+  "createdAt": {
+    "$date": "2024-03-20T19:03:02.749Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-20T19:04:31.939Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65fb3338104c733ce81a889f"
+  },
+  "name": "Guirnalda",
+  "price": 25,
+  "size": "Mediano",
+  "color": "Verde",
+  "electric": "no",
+  "shape": "Largo",
+  "space": "Interior",
+  "quantity": "3",
+  "createdAt": {
+    "$date": "2024-03-20T19:04:24.311Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-20T19:04:24.311Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65fb3365104c733ce81a88a5"
+  },
+  "name": "Arbol",
+  "price": 65,
+  "size": "Grande",
+  "color": "Verde",
+  "electric": "no",
+  "shape": "Arbol",
+  "space": "Interior",
+  "quantity": "2",
+  "createdAt": {
+    "$date": "2024-03-20T19:05:09.900Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-20T19:05:20.137Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65fb33b4104c733ce81a88ab"
+  },
+  "name": "Caja para adornos",
+  "price": 20,
+  "size": "Grande",
+  "color": "Rojo",
+  "electric": "no",
+  "shape": "Caja",
+  "space": "Interior",
+  "quantity": "8",
+  "createdAt": {
+    "$date": "2024-03-20T19:06:28.452Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-20T19:07:44.804Z"
+  }
+}]
