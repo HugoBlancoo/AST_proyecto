@@ -9,6 +9,11 @@ itemsCtrl.getItems = async (req, res) =>{
     //console.log("getItems")
 };
 itemsCtrl.createItems = async (req, res) =>{
+    for (const key in req.body) {
+        if(req.body[key] ==='' || req.body[key] === null && key!= '_id'){
+            req.body[key] = ' ';
+        }
+    }
     const newItem = new Item(req.body)
     await newItem.save()
     res.send({message: 'Item Created'})
