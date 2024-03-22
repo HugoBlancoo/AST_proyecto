@@ -20,16 +20,28 @@ itemsCtrl.createItems = async (req, res) =>{
 };
 
 itemsCtrl.getItem = async (req, res) => {
-    const { id } = req.params; // Extract the id parameter  
-    const item = await Item.findById(id); // Find the item by id
-    res.json(item); // Send the item as JSON response
+    try{
+        const { id } = req.params; // Extract the id parameter  
+        const item = await Item.findById(id); // Find the item by id
+        res.json(item); // Send the item as JSON response
+    }
     //console.log(item.length);
+    catch (error) {
+        console.error(error);
+        res.status(500).send('Error fetching items');
+    }
 };
 
 itemsCtrl.getItemByPrice = async (req, res) => {
-    const { price } = req.params; // Extract the price parameter
-    const item = await Item.find({price: parseFloat(price)}); // Find the item by price
-    res.json(item); // Send the item as JSON response
+    try{
+        const { price } = req.params; // Extract the price parameter
+        const item = await Item.find({price: parseFloat(price)}); // Find the item by price
+        res.json(item); // Send the item as JSON response
+    }
+    catch (error) {
+    console.error(error);
+    res.status(500).send('Error fetching items');
+    }
 };
 
 itemsCtrl.getItemByColor = async (req, res) =>{
